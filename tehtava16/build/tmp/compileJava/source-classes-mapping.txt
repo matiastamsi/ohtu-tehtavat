@@ -1,0 +1,10 @@
+ohtuesimerkki/PlayerReader.java
+ ohtuesimerkki.PlayerReader
+ohtuesimerkki/Player.java
+ ohtuesimerkki.Player
+ohtuesimerkki/Reader.java
+ ohtuesimerkki.Reader
+ohtuesimerkki/Main.java
+ ohtuesimerkki.Main
+ohtuesimerkki/Statistics.java
+ ohtuesimerkki.Statistics

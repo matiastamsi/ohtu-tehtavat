@@ -25,20 +25,60 @@ public class AuthenticationService {
 
     public CreationStatus createUser(String username, String password, String passwordConfirmation) {
         CreationStatus status = new CreationStatus();
-        
+
         if (userDao.findByName(username) != null) {
             status.addError("username is already taken");
         }
 
-        if (username.length()<3 ) {
+        if (username.length() < 3) {
             status.addError("username should have at least 3 characters");
+        }
+
+        if (password.length() < 8) {
+            status.addError("password should have at least 8 characters");
         }
 
         if (status.isOk()) {
             userDao.add(new User(username, password));
         }
-        
+
         return status;
+    }
+
+    private boolean invalid(String username, String password) {
+        //Check username's length
+        if (username.length() < 3) {
+            return true;
+        }
+        //Check that username consists only of letters
+        for (int i = 0; i < username.length(); i++) {
+            if (!Character.isAlphabetic(username.codePointAt(i))) {
+                return true;
+            }
+        }
+        //Check if username is unused
+        if (userDao.findByName(username) != null) {
+            return true;
+        }
+
+        //Check password's length
+        if (password.length() < 8) {
+            return true;
+        }
+
+        //Check that password consists not only of letters
+        boolean thereIsElseThanAlphabet = false;
+        for (int i = 0; i < password.length(); i++) {
+            if (!Character.isAlphabetic(password.codePointAt(i))) {
+                thereIsElseThanAlphabet = true;
+            }
+        }
+
+        if (!thereIsElseThanAlphabet) {
+            return true;
+        }
+
+        return false;
     }
 
 }

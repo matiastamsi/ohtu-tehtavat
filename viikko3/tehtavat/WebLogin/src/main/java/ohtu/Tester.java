@@ -10,7 +10,7 @@ public class Tester {
 
     public static void main(String[] args) {
 
-        WebDriver driver = new ChromeDriver();
+        /*WebDriver driver = new ChromeDriver();
 
         driver.get("http://localhost:4567");
         
@@ -75,7 +75,7 @@ public class Tester {
         sleep(2);
         
         
-        driver.quit();
+        driver.quit();*/
     }
     
     private static void sleep(int n){

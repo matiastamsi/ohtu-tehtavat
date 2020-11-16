@@ -39,8 +39,38 @@ public class AuthenticationService {
     }
 
     private boolean invalid(String username, String password) {
-        // validity check of username and password
-
+        //Check username's length
+        if (username.length() < 3) {
+            return true;
+        }
+        //Check that username consists only of letters
+        for (int i = 0; i < username.length(); i++) {
+            if (!Character.isAlphabetic(username.codePointAt(i))) {
+                return true;
+            }
+        }
+        //Check if username is unused
+        if (userDao.findByName(username) != null) {
+            return true;
+        }
+        
+        //Check password's length
+        if (password.length() < 8) {
+            return true;
+        }
+        
+        //Check that password consists not only of letters
+        boolean thereIsElseThanAlphabet = false;
+        for (int i = 0; i < password.length(); i++) {
+            if (!Character.isAlphabetic(password.codePointAt(i))) {
+                thereIsElseThanAlphabet = true;
+            }
+        }
+        
+        if (!thereIsElseThanAlphabet) {
+            return true;
+        }
+        
         return false;
     }
 }

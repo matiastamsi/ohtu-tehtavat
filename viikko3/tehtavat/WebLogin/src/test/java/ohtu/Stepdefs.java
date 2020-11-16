@@ -47,7 +47,12 @@ public class Stepdefs {
     @When("username {string} and password {string} are given")
     public void usernameAndPasswordAreGiven(String username, String password) throws Throwable {
         logInWith(username, password);
-    }   
+    }
+
+    @When("unknown username {string} and password {string} are given")
+    public void unknownUsernameAndPasswordAreGiven(String string, String string2) {
+        logInWith(string, string2);
+    }
     
     @Then("system will respond {string}")
     public void systemWillRespond(String pageContent) throws Throwable {

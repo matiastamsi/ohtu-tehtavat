@@ -17,3 +17,8 @@
 ## Viikko 3
 
   [Viikon 3 tehtäviä](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/viikko3)
+
+
+## Viikko 4
+
+  [Viikon 4 tehtäviä](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/viikko4)

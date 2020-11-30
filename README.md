@@ -22,3 +22,9 @@
 ## Viikko 4
 
   [Viikon 4 tehtäviä](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/viikko4)
+
+## Viikko 5
+
+  [Viikon 5 tehtäviä](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/viikko5)
+
+  [Retro](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/retro.md)

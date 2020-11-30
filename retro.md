@@ -16,6 +16,6 @@ Tästä voi tehdä variaatioita muun muassa (isolla ryhmällä), että osa ryhm�
 
 ### Glad, Sad, Mad
 
-Tämä tekniikka kestää noin tunnin. Ideana on kerätä hyviä, huonoja ja turhauttavia asioita sprintistä (huom. kunnioittavasti). Sen jälkeen nämä esiin tuodut asiat äänestetään priorisoituun järjestykseen, jotta niistä voidaan alkaa puhua (idena on, että jos esim. aika loppuu, niin tärkeimmät asiat tuli käytyä).
+[Tämä](http://retrospectivewiki.org/index.php?title=Glad,_Sad,_Mad) tekniikka kestää noin tunnin. Ideana on kerätä hyviä, huonoja ja turhauttavia asioita sprintistä (huom. kunnioittavasti). Sen jälkeen nämä esiin tuodut asiat äänestetään priorisoituun järjestykseen, jotta niistä voidaan alkaa puhua (idena on, että jos esim. aika loppuu, niin tärkeimmät asiat tuli käytyä).
 
 Käytännössä nämä asiat kirjoitetaan ylös lyhyesti ja viedään esim. taululle kaikkien näkyville (ja kategoriaan). Sen jälkeen jokaisella on rajallinen määrä ääniä käytettävissä äänestää taululla olevia asioita.

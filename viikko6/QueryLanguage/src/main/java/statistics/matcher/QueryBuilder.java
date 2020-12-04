@@ -4,6 +4,7 @@ public class QueryBuilder {
 
     private Matcher m;
     private Matcher[] matchers;
+    private boolean oneOf = false;
 
     public QueryBuilder() {
         this.m = new And();
@@ -12,6 +13,7 @@ public class QueryBuilder {
     }
 
     public Matcher build() {
+        if (oneOf) return this.m;
         this.m = new And(matchers);
         return this.m;
     }
@@ -31,6 +33,11 @@ public class QueryBuilder {
     public QueryBuilder hasFewerThan(int value, String fieldname) {
         this.m = new HasFewerThan(value, fieldname);
         this.matchers[3] = this.m;
+        return this;
+    }
+    
+    public QueryBuilder oneOf(Matcher m1, Matcher m2) {
+        this.m = new Or(new Matcher[]{m1, m2});
         return this;
     }
 

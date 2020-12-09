@@ -34,3 +34,9 @@
   [Viikon 6 tehtäviä](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/viikko6)
   
   [Pull request](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/PULL.md)
+  
+## Viikko 7
+
+  [Viikon 7 tehtäviä](https://github.com/matiastamsi/ohtu-tehtavat/tree/main/viikko7)
+  
+  [Tehtävä 5](https://github.com/matiastamsi/ohtu-tehtavat/blob/main/VAIHTOEHTOINEN_TEHTAVA_MERGE_SIJAAN.md)
